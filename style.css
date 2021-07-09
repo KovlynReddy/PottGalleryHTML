@@ -1,0 +1,32 @@
+.carousel .item {
+    height: 300px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+
+
+  body {
+      color: red;
+    padding-bottom: 20px;
+  }
+  
+.navbar {
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    border-bottom: 0px;
+}
+  
+  nav div ul li a {
+
+    color: black;
+  }
+
+  .nav-link {
+
+color: white;
+  }
