@@ -63,43 +63,28 @@
         <ul class="nav flex-column" style="color: white;">
 
           <li class="nav-item">
-            <a class="nav-link" href="login.html">
-              <span data-feather="shopping-cart"></span>
-              New
-            </a>
+            <a class="nav-link" href="login.html"><span data-feather="shopping-cart"></span>New</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              Sativa
-            </a>
+            <a class="nav-link active" aria-current="page" href="#"><span data-feather="home"></span>Sativa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Indica
-            </a>
+            <a class="nav-link" href="#"><span data-feather="file"></span>Indica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Hybrid
-            </a>
+            <a class="nav-link" href="#"><span data-feather="file"></span>Hybrid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Pots</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Edibles
-            </a>
+            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Edibles</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Merch
-            </a>
+            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Merch</a>
           </li>
 
         </ul>
@@ -178,4 +163,27 @@
     <script src="WeedGallaery.js"></script>
 </body>
 </html>
+
+<script type="text/javascript" src="WeedGallaery.js">
+</script>
+<script type="text/javascript" >
+
+
+$(document).ready( function(){
+  
+  $("div ul li a").click(function(){
+    
+    console.log($(this).text());
+    var filename = $(this).text();
+    // var file = filename + '.html'
+    // $("#ContentDiv").load(file)
+    
+    ChangePage($(this).text());
+    // $("#ContentDiv").load(`./${filename}.html #${$(this.text())}TableID`);
+    
+  });
+  
+});
+
+</script>
 
