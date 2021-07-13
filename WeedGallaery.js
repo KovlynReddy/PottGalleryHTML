@@ -13,14 +13,14 @@ images = images.concat(updatedImages);
 function CarouselItem(image,index){
     if(index == 1 )
     {return `<div class="carousel-item active">
-    <img src="Images/${image}" class="d-block h-3 mx-auto d-block  rounded img-thumbnail" alt="...">
+    <img src="Images/${image}" class="d-block h-2 mx-auto d-block  rounded img-thumbnail" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Weed</h5>
       <p>Home Grown</p>
     </div>
   </div>`;}
     var item = `<div class="carousel-item">
-    <img src="Images/${image}" class="d-block h-3 mx-auto d-block rounded img-thumbnail" alt="...">
+    <img src="Images/${image}" class="d-block h-2 mx-auto d-block rounded img-thumbnail" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Weed</h5>
       <p>Home Grown</p>
